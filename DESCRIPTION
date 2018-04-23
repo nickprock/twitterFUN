@@ -1,0 +1,11 @@
+Package: twitterFUN
+Type: Package
+Title: Twitter Tricks
+Version: 1.1
+Date: 2018-04-22
+Author: Nicola Procopio
+Maintainer: <nico.pro412@gmail.com>
+Description: collection of function to work on tweets
+Imports: stringr, twitteR, tm, wordcloud
+Depends: stringr, twitteR, tm, wordcloud
+License: GPL-3

@@ -1,0 +1,8 @@
+import(stringr)
+import(twitteR)
+import(tm)
+import(wordcloud)
+export(twitterCloud)
+export(edgelist)
+export(multipleSearchTwitteR)
+export(FRatio)
