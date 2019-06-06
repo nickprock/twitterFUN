@@ -3,8 +3,8 @@ function(searchQuery, number, language=NULL,
            myConsumer_key, myConsumer_secret,
            myAccess_token=NULL, myAccess_secret=NULL){
 
-setup_twitter_oauth(consumer_key =  myConsumer_key, myConsumer_secret = myConsumer_secret, 
-                        myAccess_token = myAccess_token, myAccess_secret = myAccess_secret)
+setup_twitter_oauth(consumer_key =  myConsumer_key, consumer_secret = myConsumer_secret, 
+                        access_token = myAccess_token, access_secret = myAccess_secret)
     #####################################################
     # esporta e immagazina tutto in una lista
     multidf<-list()
