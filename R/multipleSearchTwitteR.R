@@ -1,7 +1,7 @@
 multipleSearchTwitteR <-
 function(searchQuery, number, language=NULL, 
            myConsumer_key, myConsumer_secret,
-           myAccess_token=NULL, myAccess_secret=NULL){
+           myAccess_token, myAccess_secret){
 
 setup_twitter_oauth(consumer_key =  myConsumer_key, consumer_secret = myConsumer_secret, 
                         access_token = myAccess_token, access_secret = myAccess_secret)
@@ -10,7 +10,7 @@ setup_twitter_oauth(consumer_key =  myConsumer_key, consumer_secret = myConsumer
     multidf<-list()
     for (i in 1:length(searchQuery)){
       tweets<-searchTwitteR(searchQuery[i], n=number, lang = language )
-      df <- do.call("rbind", lapply(tweets, as.data.frame))
+      df <- twListToDF(tweets)
       df$searchQuery<-searchQuery[i]
       multidf[[i]]<-df
     }
