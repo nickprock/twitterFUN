@@ -7,7 +7,7 @@ function to scrape from twitter's API with multiple search query
 The function scrapes from official twitter's API using multiple search query and creates a dataset about output of API adding the column saercQuery
 }
 \usage{
-multipleSearchTwitteR(searchQuery, number, language = NULL, myConsumer_key, myConsumer_secret, myAccess_token = NULL, myAccess_secret = NULL)
+multipleSearchTwitteR(searchQuery, number, language = NULL, myConsumer_key, myConsumer_secret, myAccess_token, myAccess_secret)
 }
 \arguments{
   \item{searchQuery}{
